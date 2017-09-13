@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-formulario',
@@ -7,7 +6,7 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./formulario.component.css']
 })
 export class FormularioComponent implements OnInit {
-  public nombre: string;
+  private nombre: string;
 
   constructor() { }
 

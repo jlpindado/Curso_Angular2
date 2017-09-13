@@ -1,0 +1,11 @@
+<div class="form">
+  <form name="listaIdeas">
+    <label for="cadaIdea">Ideas</label>
+    <input type="text" id="cadaIdea" name="cadaIdea" [(ngModel)]="idea" />
+    <button (clic)="addIdea()">Añadir</button>
+  </form>
+  <p>Lista de ideas:</p>
+  <ul>
+    <li *ngFor="let idea of aIdeas">{{idea}}</li>
+  </ul>
+</div>

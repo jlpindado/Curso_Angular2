@@ -1,15 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { FormularioComponent } from './formulario/formulario.component';
+import { ListaComponent } from './lista/lista.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
-    FormularioComponent
+    FormularioComponent,
+    ListaComponent
   ],
-  declarations: [FormularioComponent]
+  declarations: [
+    FormularioComponent,
+    ListaComponent
+  ]
 })
 export class LogicaModule { }
