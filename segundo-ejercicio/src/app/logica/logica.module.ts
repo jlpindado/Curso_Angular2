@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 
 import { FormularioComponent } from './formulario/formulario.component';
 import { ListaComponent } from './lista/lista.component';
+import { NoticiaComponent } from './noticia/noticia.component';
+import { FormdinComponent } from './formdin/formdin.component';
 
 @NgModule({
   imports: [
@@ -12,11 +14,15 @@ import { ListaComponent } from './lista/lista.component';
   ],
   exports: [
     FormularioComponent,
-    ListaComponent
+    ListaComponent,
+    NoticiaComponent,
+    FormdinComponent
   ],
   declarations: [
     FormularioComponent,
-    ListaComponent
+    ListaComponent,
+    NoticiaComponent,
+    FormdinComponent
   ]
 })
 export class LogicaModule { }

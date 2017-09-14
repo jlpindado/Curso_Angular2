@@ -1,0 +1,16 @@
+<div class="form">
+  <form name="formulario">
+    <p><strong>Selección de opciones</strong></p>
+    <p><input type="checkbox" id="imprimir" name="imprimir" [(ngModel)]="opPrint" (change)="cambia_print()"/>
+    <label for="imprimir" id="lblImprimir">Imprimir</label></p>
+    
+    <p><input type="checkbox" id="tono" name="tono" [(ngModel)]="opTono"  (change)="cambia_tono()"/>
+    <label for="imprimir" id="lblImprimir">Tono claro</label></p>
+
+  </form>
+  <p>Resultado</p>
+  <ul>
+    <li>{{opPrintTxt}}</li>
+    <li>{{opTonoTxt}}</li>
+  </ul>
+</div>

@@ -2,7 +2,7 @@
   <form name="formulario">
     <label for="fNombre" id="lblNombre">¿Cómo te llamas?</label>
     <input type="text" id="fNombre" name="fNombre" [(ngModel)]="nombre" />
-    <button (clic)="nombre=''">Borrar</button>
+    <button (click)="nombre=''">Borrar</button>
   </form>
   <p>¡Hola {{nombre}}!</p>
 </div>
