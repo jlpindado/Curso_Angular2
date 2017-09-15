@@ -14,7 +14,7 @@ export class AppComponent {
   private libros: string[] = [];
   constructor( private libreria: LibrosService) {}
 
-  buscar(titulo: string){
+  buscar(titulo: string) {
     this.libros = this.libreria.buscaLibros(titulo);
   }
 
