@@ -1,8 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { ServiciosModule } from './servicios/servicios.module';
+
 import { AppComponent } from './app.component';
-import { LogicaModule } from './logica/logica.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,7 @@ import { LogicaModule } from './logica/logica.module';
   ],
   imports: [
     BrowserModule,
-    LogicaModule
+    ServiciosModule
   ],
   providers: [],
   bootstrap: [AppComponent]

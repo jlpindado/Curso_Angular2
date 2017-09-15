@@ -1,3 +1,8 @@
-<p>
-  padre works!
-</p>
+
+<h1>La lista de la compra</h1>
+
+<app-hijo *ngFor="let item of items" [item]="item" (remove)="removeItem(item)"></app-hijo>
+
+<hr>
+<input #desc type='text'>
+<button (click)="addItem(desc.value); desc.value=''">Añadir</button>
